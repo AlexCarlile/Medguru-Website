@@ -1,0 +1,235 @@
+:root{
+    --gap: 20px;
+}
+
+
+/* Oragen */
+
+.oragen-descr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 729px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.oragen-text {
+    width: 1172px;
+    font-size: 64px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.oragen-adv {
+    height: auto;
+}
+
+.adv-list {
+    /* padding-top: 140px; */
+    gap: var(--gap);
+    --offsets: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.adv-list-item {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
+    height: auto;
+    border: 1px solid white;
+    padding: 108px 89px 26px 28px;
+    justify-content: center;
+}
+
+.adv-item-title {
+    font-size: 36px;
+    font-weight: 400;
+    margin: 0;
+    display: block;
+}
+
+.adv-item-descr {
+    font-size: 21px;
+    font-weight: 400;
+    margin: 0;
+    padding-top: 14px;
+}
+
+.func-container {
+    /* height: auto; */
+    padding-top: 146px;
+}
+
+.func-list {
+    gap: var(--gap);
+    --offsets: 1;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+
+.func-item-dscr {
+    padding-top: 10px;
+    flex-direction: column;
+}
+
+.func-item {
+    /* flex-direction: column; */
+    justify-content: flex-end;
+    width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
+    height: 550px;
+}
+
+.func-item-part {
+    width: 35vw;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.func-item-title {
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.item-dscr-item {
+    /* display: flex;
+    align-items: center; */
+    min-height: 35px;
+    padding-top: 10px;
+    padding-left: 30px;
+    background-image: url("../img/36.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+
+.func-item-img {
+    background-image: url("../img/Oragen\ Dashboard.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.func-item-img2 {
+    background-image: url("../img/Oragen\ Dashboard_.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .descr-item {
+    padding-left: 30px;
+    padding-top: 6px;
+    background-image: url("../img/36.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    min-height: 30px;
+} */
+
+@media (max-width: 1440px) {
+    .func-item-part {
+        width: 48vw;
+    }
+}
+
+@media (max-width: 1272px) {
+    .func-item-title {
+        font-size: 48px;
+    }
+
+    .func-item-part {
+        width: 48vw;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .func-list {
+        --offsets: 0;
+    }
+
+    .func-item-part {
+        width: auto;
+    }
+
+    .func-item-dscr {
+        align-items: center;
+    }
+
+    .func-item h2 {
+        text-align: center;
+    }
+    
+    .adv-list {
+        --offsets: 0;
+    }
+
+    .oragen-text {
+        font-size: 36px;
+    }
+
+    .oragen-descr {
+        height: 400px;
+    }
+}
+
+@media (max-width: 540px) {
+    .oragen-text {
+        font-size: 24px;
+    }
+
+    .oragen-descr {
+        height: 400px;
+    }
+
+    .adv-list-item {
+        padding: 34px 40px 10px 13px;
+        height: auto;
+    }
+
+    .adv-item-title {
+        font-size: 20px!important;
+    }
+
+    .adv-item-descr {
+        font-size: 14px;
+    }
+
+    .func-container {
+        padding-top: 50px;
+    }
+
+    .func-item {
+        height: auto;
+    }
+
+    .func-item-img {
+        height: 300px;
+    }
+
+    .func-item-img2 {
+        height: 300px;
+    }
+
+    .func-item-dscr {
+        align-items: flex-start;
+    }
+
+    .func-item-title {
+        font-size: 24px;
+    }
+
+    .item-dscr-item {
+        font-size: 16px;
+    }
+
+    .func-list {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .partners-title {
+        font-size: 24px;
+    }
+}

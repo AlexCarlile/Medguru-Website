@@ -1,0 +1,157 @@
+:root {
+    --gap: 20px;
+}
+
+.prod-dscr {
+    height: 700px;
+}
+
+.prod-dscr-hero {
+    padding-top: 350px;
+    background-image: linear-gradient(to top, black 0%, transparent 100%);
+}
+
+.prod-dscr-title {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 64px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.adv-item-title {
+    font-size: 36px;
+}
+
+.adv-item {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgb(59,68,72);
+    transition: max-height 0.3s ease-in-out; /* Анимация изменения высоты */
+}
+
+
+.adv-dscr {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.adv-dscr.active {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.plus {
+    display: none;
+    transition: 0.3s ease-in-out;
+}
+
+.plus.active {
+    display: block;
+    transition: 0.5s ease-in-out;
+}
+
+.plus-minus {
+    cursor: pointer;
+}
+
+.cases-list {
+    gap: var(--gap);
+    --offsets: 1;
+    padding-top: 140px;
+    padding-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.cases-item {
+    height: 360px;
+    width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
+    text-transform: uppercase;
+    padding: 0 32px 20px 32px;
+    align-items: flex-end;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.cases-item-sec {
+    padding-top: 60px;
+}
+
+.scnd-row {
+    margin-top: 40px;
+}
+
+
+
+.cases-video {
+    height: 780px;
+    width: calc((100% - (var(--gap))) /1);
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    flex-direction: column;
+    margin: 0;
+}
+
+.cases-video:hover {
+    opacity: 80%;
+    transform: scale(102%);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.cases-video-dscr {
+    font-size: 36px;
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+}
+
+@media (max-width: 1272px) {
+    .cases-list {
+        --offsets: 0;
+    }
+}
+
+@media (max-width: 540px) {
+    .prod-dscr-title {
+        font-size: 24px;
+    }
+
+    .prod-dscr-hero {
+        padding-top: 100px;
+    }
+
+    .prod-dscr {
+        height: 300px;
+    }
+
+    .cases-list {
+        padding-top: 60px;
+    }
+
+    .cases-item {
+        font-size: 18px;
+        height: 180px;
+        padding: 0 14px 10px 14px;
+    }
+
+    .scnd-row {
+        margin: 0;
+    }
+
+    .cases-video {
+        width: 100%;
+        height: 200px;
+        background-position: center;
+    }
+
+    .cases-video-dscr {
+        font-size: 18px;
+        padding-bottom: 100px;
+    }
+}
